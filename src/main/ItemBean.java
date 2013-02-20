@@ -16,7 +16,7 @@ public class ItemBean {
 		return itemName;
 	}
 
-	public void setSubjectID(String subjectID) {
+	public void setItemName(String subjectID) {
 		this.itemName = subjectID;
 	}
 

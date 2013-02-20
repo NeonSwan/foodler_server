@@ -22,14 +22,14 @@ public class ItemFacade {
 		EntityManager em = factory.createEntityManager();
 		em.getTransaction().begin();
 		ItemBean subjectBean = new ItemBean();
-		subjectBean.setSubjectID(subjectID);
+		subjectBean.setItemName(subjectID);
 		em.persist(subjectBean);
 		em.getTransaction().commit();
 
 		em.close();
 	}
 
-	public static String findItemBySearchQuery(String query) {
+	public static String getItemBySearchQuery(String query) {
 		EntityManagerFactory factory = Persistence
 				.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
 		EntityManager em = factory.createEntityManager();
@@ -39,7 +39,7 @@ public class ItemFacade {
 		return GSON.toJson(subjectList);
 	}
 
-	public void deleteItem(String subject) {
+	public static void deleteItem(String subject) {
 
 	}
 

@@ -9,31 +9,15 @@
 <body>
 
 
-<form method="POST" action='Controller' name="edit">
+<form method="POST" action='Items' name="edit">
 <table>
   <tr>
-    <td>Question:</td>
-    <td><input type="text" name="question"></td>
+    <td>Item name</td>
+    <td><input type="text" name="itemName"></td>
   </tr>
   <tr>
     <td>Answer:</td>
     <td><input type="text" name="answer"></td>
-  </tr>
-  <tr>
-    <td>Wrong answer:</td>
-    <td><input type="text" name="wrongAnwer"></td>
-  </tr>
-  <tr>
-    <td>Wrong answer 2:</td>
-    <td><input type="text" name="wrongAnwer2"></td>
-  </tr>
-  <tr>
-    <td>Wrong answer 3:</td>
-    <td><input type="text" name="wrongAnwer3"></td>
-  </tr>
-  <tr>
-    <td>Course id</td>
-    <td><input type="text" name="courseID"></td>
   </tr>
   <tr>
     <td><input type="submit" value="save"> <input

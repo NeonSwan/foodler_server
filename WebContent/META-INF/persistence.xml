@@ -9,11 +9,11 @@ http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<class>main.ItemBean</class>
 		<properties>
-			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/quizzler" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/warehouse" />
 			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
 			<property name="hibernate.connection.password" value="" />
 			<property name="hibernate.connection.username" value="root" />
-			<property name="hibernate.hbm2ddl.auto" value="updates"/>
+			<property name="hibernate.hbm2ddl.auto" value="create"/>
 		</properties>
 	</persistence-unit>
 </persistence>
